@@ -1,0 +1,50 @@
+.cards-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; /* Centrar horizontalmente las cards */
+    gap: 12px;
+    margin: 0 10px; /* Centrar horizontalmente */
+}
+
+.card-link {
+    text-decoration: none; /* Quitar subrayado de los enlaces */
+    width: 100%; /* Ocupa todo el ancho del contenedor padre */
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    padding: 10px 15px;
+    background-color: #444; /* Fondo oscuro */
+    color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s, transform 0.2s;
+    height: 50px; /* Reducción en la altura */
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+}
+
+.card img {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px; /* Espacio entre imagen e información */
+    border-radius: 50%; /* Íconos con diseño circular */
+}
+
+.card-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-title {
+    font-size: 0.95rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.card-subtitle {
+    font-size: 0.85rem;
+    color: #aaa; /* Texto más claro para la frase descriptiva */
+    margin: 5px 0 0;
+}

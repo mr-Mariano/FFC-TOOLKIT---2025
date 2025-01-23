@@ -1,0 +1,43 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+#root {
+  overflow-y: auto;
+  flex: 1; /* Asegurar que el root se expanda */
+}
+
+/* Esto asegura que el body mantenga el layout completo sin scroll oculto */
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-y: auto; /* Cambiado de hidden a auto para permitir el scroll */
+}
+.main-container {
+  flex: 1; /* Permite que el contenedor crezca para ocupar el espacio restante */
+  padding: 60px 0; /* Espacio para el Navbar y Footer */
+  display: flex;
+  justify-content: center; /* Centrar horizontalmente */
+  align-items: center;    /* Centrar verticalmente */
+  gap: 20px;              /* Espacio entre elementos */
+  box-sizing: border-box; /* Incluye padding en el cálculo del tamaño */
+  height: calc(100vh - 100px); /* Resta el espacio total del padding */
+  overflow: visible;      /* Asegura que el contenido no se corte */
+}
+
+.container {
+  width: 400px;
+  height: 500px;
+  background-color: #007bff;
+  display: flex;
+  justify-content: center; /* Centrar contenido horizontalmente */
+  align-items: center;    /* Centrar contenido verticalmente */
+  color: white;
+  font-weight: bold;
+  border-radius: 8px;
+}
