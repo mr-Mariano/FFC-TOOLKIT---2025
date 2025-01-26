@@ -25,7 +25,7 @@ const TruthTableGenerator = () => {
                 /*Explicación:
                     •Máscara: Es el número con un solo bit en 1 en la posición que corresponde a la variable actual.
                         Se genera con 1 << (variables.length - index - 1).
-	                •Operación i & (1 << ...): 
+	                •Operación i & (1 << ...):
                         Aplica la máscara sobre el número i (que es el número de la iteración en binario) 
                         para verificar si el bit está encendido o apagado.
                 */
