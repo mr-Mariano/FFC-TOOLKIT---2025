@@ -1,0 +1,74 @@
+/* Estilo general para centrar el contenido */
+.logic-container {
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Cambiar de flex-start a center */
+    padding-top: 20px; /* Espacio desde el borde superior */
+    text-align: center;
+    flex-direction: row; /* Alinea los elementos en una fila */
+    width: 100%;
+    box-sizing: border-box; /* Incluye el padding en el ancho total */
+}
+
+/* Estilo para el componente Instructions */
+.card-instructions {
+    width: 400px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px; /* Espacio entre el texto y las instrucciones */
+    text-align: left;
+    color: black;
+}
+
+.card-instructions h2 {
+    margin-top: 0;
+}
+
+.card-instructions ul {
+    padding-left: 20px;
+}
+
+.card-instructions li {
+    margin-bottom: 10px;
+}
+
+/* Estilo para el contenedor de texto */
+.text-container {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 10px; /* Espacio entre el texto y las instrucciones */
+    height: 100%; /* Asegura que ocupe todo el alto disponible */
+}
+
+.text-container h1, .text-container p {
+    margin: 0;
+    padding: 10px 0;
+}
+
+/* Estilo para asegurar que el contenido no se oculte detrás de la barra de desplazamiento */
+body {
+    overflow: auto;
+    font-size: 14px;
+}
+
+/* Estilo para el contenedor de la tabla de verdad */
+.truth-table-container {
+    width: 80%;
+    max-width: 800px;
+    background-color: #f3f4f6;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px auto; /* Centra horizontalmente la tarjeta */
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
